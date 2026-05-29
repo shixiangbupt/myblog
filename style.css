@@ -1588,3 +1588,73 @@ img {
     padding: 14px 16px;
   }
 }
+
+/* ===== Course Resources ===== */
+.course-resources {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--border-color, rgba(0,0,0,0.1));
+}
+
+.resources-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary, #2d3436);
+  margin-bottom: 8px;
+}
+
+.resources-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resources-list li {
+  margin-bottom: 5px;
+}
+
+.resources-list li::before {
+  content: '\1F4C4';
+  margin-right: 4px;
+  font-size: 0.75rem;
+}
+
+.resources-list a {
+  font-size: 0.82rem;
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s;
+  line-height: 1.5;
+}
+
+.resources-list a:hover {
+  color: var(--accent-secondary, #6c5ce7);
+  text-decoration: underline;
+}
+
+[data-theme="dark"] .course-resources {
+  border-top-color: var(--border-color, rgba(255,255,255,0.1));
+}
+
+/* ===== Resource Group (categorized resources) ===== */
+.resource-group {
+  margin-top: 10px;
+}
+
+.resource-group-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 4px;
+  padding-left: 2px;
+}
+
+.resource-group + .resource-group {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dotted var(--border-color, rgba(0,0,0,0.08));
+}
+
+[data-theme="dark"] .resource-group + .resource-group {
+  border-top-color: var(--border-color, rgba(255,255,255,0.08));
+}
